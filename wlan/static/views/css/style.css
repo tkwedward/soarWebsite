@@ -1,17 +1,360 @@
-/* Error: Expected identifier.
- *     ,
- * 391 |     git add .
- *     |              ^
- *     '
- *   wlan/static/views/css/style.scss 391:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a     \2577 \a 391 \2502      git add .\a     \2502               ^\a     \2575 \a   wlan/static/views/css/style.scss 391:14  root stylesheet";
+body {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  padding: 0px;
+  overflow-x: hidden;
+  margin: 0px;
 }
+
+.body {
+  width: 100vw;
+}
+
+.header {
+  width: 1200px;
+  max-width: 100%;
+  padding: 0px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  background: #43a497;
+  backface-visibility: hidden;
+}
+.header .soarLogo {
+  margin: 20px 20px;
+  width: 80px;
+  position: relative;
+  vertical-align: middle;
+}
+.header .menu {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .menu a {
+  padding: 5px 1px;
+  margin: 5px 10px;
+  color: white;
+  font-family: "Unite", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header .menu a.highlighted {
+  border-bottom: 1px solid white;
+}
+
+.content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fbfaf9;
+  padding-bottom: 50px;
+  /* -------------------- indexPage -------------------- */
+  /* -------------------- volunteerPage -------------------- */
+  /* -------------------- activitiesPage -------------------- */
+  /* ------------------- getInvolvedPage ------------------- */
+}
+.content .banner .bannerPhoto {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+}
+.content .banner .bannerPhoto img {
+  width: 100%;
+}
+.content .banner .bannerPhoto .bannerText {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  -webkit-text-stroke: 3px black;
+  opacity: 1;
+}
+.content .banner .bannerPhoto .bannerText .punctuation {
+  color: #f9ef84;
+}
+.content .banner .bannerSubText.small {
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.content .originsAndMissions {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content .originsAndMissions .textbox {
+  margin: 1vw;
+  color: #818181;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.content .originsAndMissions .textbox h2 {
+  color: black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.content .contentText {
+  text-align: center;
+  padding: 50px;
+}
+.content .contentText h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content .contentText h3 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.content .bannerText.indexPage {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  color: blue;
+  font-size: 90px;
+  font-size: 5vw;
+  text-align: center;
+}
+.content .bannerText.volunteerPage {
+  position: absolute;
+  display: inline;
+  font-size: 3.5vw;
+  right: 40px;
+  top: 20px;
+  color: blue;
+}
+.content .volunteersContainer {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .volunteersContainer .volunteerBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #818181;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content .volunteersContainer .volunteerBox h2 {
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.content .volunteersContainer .volunteerBox h2.right {
+  text-align: right;
+}
+.content .volunteersContainer .volunteerBox img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .volunteersContainer .volunteerBox.first {
+  margin-top: 85px;
+}
+.content .volunteersContainer hr {
+  background-color: rgba(0, 0, 0, 0.13);
+  border: 0pt none;
+  color: #eee;
+  color: rgba(0, 0, 0, 0.13);
+  height: 1px;
+  margin: 0px auto;
+  text-align: center;
+}
+.content .bannerText.activitiesPage {
+  position: absolute;
+  display: inline;
+  left: 30px;
+  top: 30px;
+  font-size: 3.5vw;
+}
+.content .patchsContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 90%;
+}
+.content .patchsContainer .patchContainer .patchImage {
+  width: 60%;
+}
+.content .activitiesGallery {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .activitiesGallery .activityContainer {
+  text-align: center;
+}
+.content .activitiesGallery .activityContainer .bigImageContainer {
+  text-align: center;
+}
+.content .activitiesGallery .activityContainer .bigImageContainer img {
+  height: 70vh;
+  object-fit: contain;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .activitiesGallery .thumbnailsContainer {
+  margin-top: 40px;
+}
+.content .activitiesGallery .thumbnailsContainer .thumbnail {
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.content .bannerText.getInvolvedPage {
+  position: absolute;
+  display: inline;
+  right: 30px;
+  bottom: 30px;
+  font-size: 5vw;
+}
+.content .mainText {
+  max-width: 960px;
+  padding: 5px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #818181;
+}
+.content .mainText h1 {
+  color: black;
+}
+.content .mainText .slogan {
+  font-size: 32px;
+  font-style: italic;
+  line-height: 40px;
+}
+.content .formContainer {
+  max-width: 960px;
+  padding: 5px 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.content .formContainer .form {
+  width: 50vw;
+}
+.content .formContainer .socialContractContainer {
+  text-align: center;
+  padding: 5px 30px;
+}
+.content .formContainer .socialContractContainer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  object-fit: contain;
+}
+
+/* ------------------- acknowledgments ------------------- */
+.content.acknowledgments .bannerText {
+  position: absolute;
+  display: inline;
+  right: 30px;
+  top: 30px;
+  font-size: 5vw;
+}
+.content.acknowledgments .detailInfoContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.content.acknowledgments .partnersContainer {
+  padding: 5px 30px;
+}
+.content.acknowledgments .partnersContainer h1 {
+  color: black;
+  line-height: 40px;
+}
+.content.acknowledgments .partnersContainer img {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+  display: block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content.acknowledgments a, .content.acknowledgments .partnersContainer {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #818181;
+}
+.content.acknowledgments a {
+  text-decoration: none;
+  color: #416fbe;
+}
+
+/* ------------------- FAQs ------------------- */
+.content.FAQs .bannerText {
+  position: absolute;
+  display: inline;
+  right: 30px;
+  top: 30px;
+  font-size: 5vw;
+}
+.content.FAQs .mainText {
+  max-width: 960px;
+  padding: 5px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #818181;
+}
+.content.FAQs .mainText h1 {
+  color: black;
+  line-height: 40px;
+}
+
+/* ------------------- footer ------------------- */
+.footer {
+  width: 1200px;
+  min-height: 65px;
+  max-width: 100%;
+  padding: 0px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  background: #43a497;
+  backface-visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
