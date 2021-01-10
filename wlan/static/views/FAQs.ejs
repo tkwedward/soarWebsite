@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <%- include('head'); %>
+
+    <body>
+        <script src="static/views/js/ready.js" charset="utf-8"></script>
+
+        <%- include('mainMenu'); %>
+
+        <div class="content FAQs">
+          <div class = "banner">
+              <div class="bannerPhoto">
+                <img src="static/views/img/cover_image/FAQsCropped.jpg
+                ">
+                <div class="bannerText small"> FAQs Section   <span class="punctuation">!</span>
+                </div>
+              </div>
+          </div> <!-- banner -->
+          <div class="mainText">
+
+          </div> <!-- mainText -->
+
+          <div class="resources">
+            <!-- <%- text %> -->
+          </div> <!-- resources -->
+      </div>  <!-- content  -->
+
+
+
+      <%- include('footer'); %>
+    </body>
+
+
+    <script type="text/javascript">
+        let data = <%- text %>
+        console.log(data);
+    </script>
+
+    <link rel="stylesheet" href="static/views/css/style.css">
+    <script src="static/views/js/FQAs.js" charset="utf-8"></script>
+
+
+</html>

@@ -1,0 +1,14 @@
+name: Community Outreach Academy (COA)
+photo: https://www.outreachacademy.org/images/LOGO.png
+website: https://www.outreachacademy.org/
+content: "The Community Outreach Academy is open to all students in grades K-6. The Academy emphasizes college and university preparation. Through curriculum aligned with state standards, the Academy strives to prepare students to become responsible citizens in the 21st century, a world of cultural diversity and rapid technological change. Students are offered a challenging curriculum featuring Treasures Language Arts, enVision Mathematics and Science and McGraw Hill Social Studies.  Treasures Language Arts is a scientifically research-based program which works to ensure that No Child is left Behind."
+---
+name: Aerospace Museum of California (AMC)
+photo: https://scontent.fsac1-1.fna.fbcdn.net/v/t1.0-9/27973939_10156544051427323_884566216288762015_n.png?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=aM7WS5hpDS4AX-lsWG1&_nc_ht=scontent.fsac1-1.fna&oh=d6dba4e6a6734a00da7b641d10ce5815&oe=601EE6FE
+website: https://aerospaceca.org/
+content: "The mission of the Aerospace Museum of California is to inspire students to explore, dream, and discover STEM through hands-on learning: Explore-Discover-Inspire! Our Vision is to provide an interactive STEM experience to every child, school, and family in the greater Sacramento region. Our goal is to give 30,000 Sacramento kids a STEM Experience, regardless of socioeconomic background."
+---
+name: Tracy
+photo: https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+website:
+content: "A diam maecenas sed enim ut. Ut venenatis tellus in metus vulputate eu. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Nibh sed pulvinar proin gravida hendrerit lectus. Lacinia quis vel eros donec ac odio tempor orci dapibus. Eget nullam non nisi est sit amet facilisis magna. Tristique risus nec feugiat in. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Dignissim sodales ut eu sem integer vitae. ."

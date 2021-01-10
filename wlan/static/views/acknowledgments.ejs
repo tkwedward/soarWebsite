@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <%- include('head'); %>
+
+    <body>
+        <script src="static/views/js/ready.js" charset="utf-8"></script>
+
+        <%- include('mainMenu'); %>
+
+        <div class="content acknowledgments">
+          <div class = "banner">
+              <div class="bannerPhoto">
+                  <img src="static/views/img/cover_image/acknowledgmentsCropped.jpg
+                  ">
+                  <div class="bannerText volunteerPage small"> Acknowledgments <span class="punctuation">!</span> </div>
+              </div>
+
+              <!-- <div class="bannerSubText small"> Scroll down to learn what our volunteers love about SOAR. </div> -->
+          </div> <!-- banner -->
+          <div class="partnersContainer maxWidthContainer">
+          </div>
+
+      </div>  <!-- content  -->
+
+      <%- include('footer'); %>
+    </body>
+
+
+    <script type="text/javascript">
+        let data = <%- text %>
+    </script>
+
+    <link rel="stylesheet" href="static/views/css/style.css">
+    <script src="static/views/js/acknowledgments.js" charset="utf-8"></script>
+
+
+</html>

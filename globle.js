@@ -97,6 +97,61 @@ app.get("/get-involved", (request, response) => {
     })
 })
 
+app.get("/acknowledgments", (request, response) => {
+    var dataFile = fs.readFileSync(path.join(__dirname, "./wlan/static/views/data/acknowledgments.txt"), 'utf8');
+
+    let faqArray = dataFile.split("---\n")
+
+    // convert to individual data
+    let faqJsonData = faqArray.map(p=>{
+        let entity = p.split("\n")
+
+        if (entity[0]!="name:"){ // to skip empty data
+            let data = {
+                "name": entity[0].replace("name: ", ""),
+                "photo": entity[1].replace("photo: ", ""),
+                "website": entity[2].replace("website: ", ""),
+                "content": entity[3].replace("content: ", "")
+            }
+            return data
+        } else {
+            return null
+        }
+
+    })
+    console.log(faqJsonData);
+    response.render("acknowledgments.ejs", {
+        "text": JSON.stringify(faqJsonData)
+    })
+})
+
+app.get("/FAQs", (request, response) => {
+    var dataFile = fs.readFileSync(path.join(__dirname, "./wlan/static/views/data/FAQs.txt"), 'utf8');
+
+    let faqArray = dataFile.split("---\n")
+
+    // convert to individual data
+    let faqJsonData = faqArray.map(p=>{
+        let faq = p.split("\n")
+
+        if (faq[0]!="question:"){ // to skip empty data
+            let data = {
+                "question": faq[0].replace("question: ", ""),
+                "answer": faq[1].replace("answer: ", "")
+            }
+            return data
+        } else {
+            return null
+        }
+
+    })
+    console.log(faqJsonData);
+
+    response.render("FAQs.ejs", {
+        "text": JSON.stringify(faqJsonData)
+    })
+})
+
 
 // app.get("/", (request, response) => {
 // 	var dataFile = fs.readFileSync(path.join(__dirname, "./solution/static/data/ECS152A/solution.json"), 'utf8');

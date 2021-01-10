@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  width: 1400px;
+  width: 1200px;
   max-width: 100%;
   padding: 0px 0px;
   margin-right: auto;
@@ -51,16 +51,18 @@ body {
 }
 
 .content {
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fbfaf9;
+  padding-bottom: 50px;
   /* -------------------- indexPage -------------------- */
   /* -------------------- volunteerPage -------------------- */
   /* -------------------- activitiesPage -------------------- */
   /* ------------------- getInvolvedPage ------------------- */
 }
 .content .banner .bannerPhoto {
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -73,6 +75,7 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  -webkit-text-stroke: 3px black;
   opacity: 1;
 }
 .content .banner .bannerPhoto .bannerText .punctuation {
@@ -208,7 +211,7 @@ body {
   text-align: center;
 }
 .content .activitiesGallery .activityContainer .bigImageContainer img {
-  height: 50vh;
+  height: 70vh;
   object-fit: contain;
   margin-bottom: 5px;
   margin-left: auto;
@@ -231,7 +234,7 @@ body {
   font-size: 5vw;
 }
 .content .mainText {
-  max-width: 1120px;
+  max-width: 960px;
   padding: 5px 30px;
   margin-left: auto;
   margin-right: auto;
@@ -250,7 +253,7 @@ body {
   line-height: 40px;
 }
 .content .formContainer {
-  max-width: 1120px;
+  max-width: 960px;
   padding: 5px 30px;
   width: 100%;
   margin-left: auto;
@@ -274,11 +277,84 @@ body {
   object-fit: contain;
 }
 
+/* ------------------- acknowledgments ------------------- */
+.content.acknowledgments .bannerText {
+  position: absolute;
+  display: inline;
+  right: 30px;
+  top: 30px;
+  font-size: 5vw;
+}
+.content.acknowledgments .detailInfoContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.content.acknowledgments .partnersContainer {
+  padding: 5px 30px;
+}
+.content.acknowledgments .partnersContainer h1 {
+  color: black;
+  line-height: 40px;
+}
+.content.acknowledgments .partnersContainer img {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+  display: block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content.acknowledgments a, .content.acknowledgments .partnersContainer {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #818181;
+}
+.content.acknowledgments a {
+  text-decoration: none;
+  color: #416fbe;
+}
+
+/* ------------------- FAQs ------------------- */
+.content.FAQs .bannerText {
+  position: absolute;
+  display: inline;
+  right: 30px;
+  top: 30px;
+  font-size: 5vw;
+}
+.content.FAQs .mainText {
+  max-width: 960px;
+  padding: 5px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #818181;
+}
+.content.FAQs .mainText h1 {
+  color: black;
+  line-height: 40px;
+}
+
 /* ------------------- footer ------------------- */
 .footer {
-  margin-top: 200px;
-  background: #43a497;
+  width: 1200px;
   min-height: 65px;
+  max-width: 100%;
+  padding: 0px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  background: #43a497;
+  backface-visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

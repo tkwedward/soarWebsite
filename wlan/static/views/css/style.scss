@@ -12,7 +12,7 @@ body {
     width: 100vw;
 }
 
-$maxWidth: 1400px;
+$maxWidth: 1200px;
 .header {
     width: $maxWidth;
     max-width: 100%;
@@ -39,6 +39,7 @@ $maxWidth: 1400px;
         margin-right: auto;
 
         a {
+
             padding: 5px 1px ;
             margin: 5px 10px;
             color: white;
@@ -63,6 +64,8 @@ $maxWidth: 1400px;
   max-width: $maxWidth;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fbfaf9;
+  padding-bottom: 50px;
 
 
   .banner {
@@ -80,6 +83,7 @@ $maxWidth: 1400px;
               color: white;
               font-family: "Montserrat", sans-serif;
               font-weight: 700;
+              -webkit-text-stroke: 3px black;
 
               // -webkit-transform: translateY(0) scale(1); opacity: 1;
               // transform: translateY(0) scale(1);
@@ -260,7 +264,7 @@ $maxWidth: 1400px;
           .bigImageContainer{
               text-align: center;
               img {
-                height: 50vh;
+                height: 70vh;
                 object-fit: contain;
                 margin-bottom: 5px;
                 margin-left: auto;
@@ -341,9 +345,99 @@ $maxWidth: 1400px;
   }
 }// .content
 
+  /* ------------------- acknowledgments ------------------- */
+.content.acknowledgments{
+    .bannerText {
+        position: absolute;
+        display: inline;
+        right: 30px;
+        top: 30px;
+        font-size: 5vw;
+    }
+
+    .detailInfoContainer {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .partnersContainer{
+        h1 {
+          color: black;
+          line-height: 40px;
+        }
+        padding: 5px 30px;
+
+        img {
+            height: 250px;
+            width: 250px;
+            object-fit: contain;
+            display: block;
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    a, .partnersContainer {
+        max-width: $maxWidth * 0.8;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #818181;
+    }
+
+    a {
+      text-decoration: none;
+      color: #416fbe
+    }
+}
+
+  /* ------------------- FAQs ------------------- */
+.content.FAQs{
+    .bannerText {
+        position: absolute;
+        display: inline;
+        right: 30px;
+        top: 30px;
+        font-size: 5vw;
+    }
+
+    .mainText {
+        max-width: $maxWidth * 0.8;
+        padding: 5px 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #818181;
+
+        h1 {
+          color: black;
+          line-height: 40px;
+        }
+    }
+}
+
+
 /* ------------------- footer ------------------- */
 .footer {
-  margin-top: 200px;
-  background: #43a497;
+
+
+
+
+  width: $maxWidth;
   min-height: 65px;
+
+  max-width: 100%;
+  padding: 0px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  background:  #43a497;
+  backface-visibility: hidden;
 }
