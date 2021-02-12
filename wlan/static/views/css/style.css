@@ -34,7 +34,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.header .menu a {
+.header .menu a.menuitem {
   padding: 5px 1px;
   margin: 5px 10px;
   color: white;
@@ -46,7 +46,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.header .menu a.highlighted {
+.header .menu a.menuitem.highlighted {
   border-bottom: 1px solid white;
 }
 
@@ -75,7 +75,7 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 1px black;
   opacity: 1;
 }
 .content .banner .bannerPhoto .bannerText .punctuation {
@@ -116,8 +116,10 @@ body {
   font-size: 30px;
   font-weight: 700;
 }
-.content .contentText h3 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+.content .contentText h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
 }
 .content .bannerText.indexPage {
   position: absolute;
@@ -167,7 +169,7 @@ body {
 }
 .content .volunteersContainer .volunteerBox img {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -197,7 +199,15 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 90%;
 }
+.content .patchsContainer .patchContainer {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
 .content .patchsContainer .patchContainer .patchImage {
+  cursor: pointer;
   width: 60%;
 }
 .content .activitiesGallery {
@@ -206,6 +216,10 @@ body {
 }
 .content .activitiesGallery .activityContainer {
   text-align: center;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
 }
 .content .activitiesGallery .activityContainer .bigImageContainer {
   text-align: center;
@@ -225,6 +239,7 @@ body {
   width: 80px;
   height: 80px;
   object-fit: cover;
+  cursor: pointer;
 }
 .content .bannerText.getInvolvedPage {
   position: absolute;
@@ -265,6 +280,51 @@ body {
 .content .formContainer .form {
   width: 50vw;
 }
+.content .formContainer .form .formTitle {
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content .formContainer .form .requiredLabel {
+  font-family: "Montserrat", sans-serif;
+  line-height: 10px;
+  font-weight: 300;
+  font-size: 15px;
+}
+.content .formContainer .form .formLabel {
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 12px 0px;
+  font-size: 18px;
+}
+.content .formContainer .form span.form-required {
+  color: red;
+}
+.content .formContainer .form .formInputContainer {
+  display: inline;
+}
+.content .formContainer .form .formInputContainer input {
+  padding: 10px 15px;
+  font-size: 15px;
+}
+.content .formContainer .form .emailFieldContainer input {
+  width: 60%;
+}
+.content .formContainer .form .commentFieldContainer textarea {
+  width: 65%;
+  resize: none;
+}
+.content .formContainer .form .formSubmitButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  letter-spacing: 0.15em;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
 .content .formContainer .socialContractContainer {
   text-align: center;
   padding: 5px 30px;
@@ -275,6 +335,13 @@ body {
   margin-right: auto;
   width: 400px;
   object-fit: contain;
+}
+.content .formContainer .socialContractContainer .caption {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
 }
 
 /* ------------------- acknowledgments ------------------- */

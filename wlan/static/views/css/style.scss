@@ -38,7 +38,7 @@ $maxWidth: 1200px;
         margin-left: auto;
         margin-right: auto;
 
-        a {
+        a.menuitem{
 
             padding: 5px 1px ;
             margin: 5px 10px;
@@ -52,7 +52,7 @@ $maxWidth: 1200px;
             text-decoration: none;
         }
 
-        a.highlighted {
+        a.menuitem.highlighted {
           border-bottom: 1px solid white;
         }
     }
@@ -83,7 +83,7 @@ $maxWidth: 1200px;
               color: white;
               font-family: "Montserrat", sans-serif;
               font-weight: 700;
-              -webkit-text-stroke: 3px black;
+              -webkit-text-stroke: 1px black;
 
               // -webkit-transform: translateY(0) scale(1); opacity: 1;
               // transform: translateY(0) scale(1);
@@ -95,8 +95,6 @@ $maxWidth: 1200px;
           }
 
       }
-
-
 
       .bannerSubText.small {
           color: white;
@@ -145,8 +143,11 @@ $maxWidth: 1200px;
         font-weight: 700;
       }
 
-      h3 {
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      h4 {
+        // font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+        font-weight: 700;
       }
   }
 
@@ -211,7 +212,7 @@ $maxWidth: 1200px;
 
           img {
               max-height: 100%;
-              max-width: 100%;
+              max-width: 90%;
               margin-left: auto;
               margin-right: auto;
 
@@ -250,7 +251,14 @@ $maxWidth: 1200px;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       width: 90%;
       .patchContainer {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+
           .patchImage {
+            cursor: pointer;
               width: 60%;
           }
       }
@@ -261,6 +269,10 @@ $maxWidth: 1200px;
       margin-right: auto;
       .activityContainer {
           text-align: center;
+          font-family: "Montserrat";
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 30px;
           .bigImageContainer{
               text-align: center;
               img {
@@ -279,7 +291,8 @@ $maxWidth: 1200px;
                 margin-right: 10px;
                 width: 80px;
                 height: 80px;
-                object-fit: cover
+                object-fit: cover;
+                cursor: pointer
           }
       }
 
@@ -315,7 +328,9 @@ $maxWidth: 1200px;
           line-height: 40px;
       }
   }
-
+  // .fieldContainer{
+  //   margin-bottom: 10px;
+  // }
   .formContainer {
       max-width: $maxWidth * 0.8;
       padding: 5px 30px;
@@ -328,6 +343,65 @@ $maxWidth: 1200px;
 
       .form {
           width: 50vw;
+
+          .formTitle{
+            font-family: "Montserrat", sans-serif;
+            line-height: 30px;
+            font-size: 30px;
+            font-weight: 700;
+          }
+
+          .requiredLabel{
+            font-family: "Montserrat", sans-serif;
+            line-height: 10px;
+            font-weight: 300;
+            font-size: 15px;
+          }
+
+          .formLabel{
+            font-family: "Montserrat", sans-serif;
+            line-height: 30px;
+            font-weight: 300;
+            margin: 12px 0px;
+            font-size: 18px;
+
+          }
+
+          span.form-required{
+            color: red;
+          }
+
+          .formInputContainer{
+            display: inline;
+
+            input{
+              padding: 10px 15px;
+              font-size: 15px;
+            }
+          }
+
+          .emailFieldContainer{
+            input{
+                width: 60%;
+            }
+          }
+
+          .commentFieldContainer{
+            textarea{
+              width: 65%;
+              resize: none;
+            }
+          }
+
+          .formSubmitButton{
+            margin-top: 10px;
+            padding: 10px 20px;
+            letter-spacing: 0.15em;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+          }
       }
 
       .socialContractContainer {
@@ -340,6 +414,14 @@ $maxWidth: 1200px;
 
               width: 400px;
               object-fit: contain;
+          }
+
+          .caption{
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
           }
       }
   }

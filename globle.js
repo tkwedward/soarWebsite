@@ -28,6 +28,7 @@ app.set("views", path.join(__dirname, "./wlan/static/views"))
 app.use(express.static(path.join(__dirname, "./wlan")))
 
 
+
 // app.get("/", (request, response) => {
 //   var response.render("homepage.ejs", {
 //   })
@@ -96,34 +97,34 @@ app.get("/get-involved", (request, response) => {
         "text": JSON.stringify(soarClasses)
     })
 })
-
-app.get("/acknowledgments", (request, response) => {
-    var dataFile = fs.readFileSync(path.join(__dirname, "./wlan/static/views/data/acknowledgments.txt"), 'utf8');
-
-    let faqArray = dataFile.split("---\n")
-
-    // convert to individual data
-    let faqJsonData = faqArray.map(p=>{
-        let entity = p.split("\n")
-
-        if (entity[0]!="name:"){ // to skip empty data
-            let data = {
-                "name": entity[0].replace("name: ", ""),
-                "photo": entity[1].replace("photo: ", ""),
-                "website": entity[2].replace("website: ", ""),
-                "content": entity[3].replace("content: ", "")
-            }
-            return data
-        } else {
-            return null
-        }
-
-    })
-    console.log(faqJsonData);
-    response.render("acknowledgments.ejs", {
-        "text": JSON.stringify(faqJsonData)
-    })
-})
+//
+// app.get("/acknowledgments", (request, response) => {
+//     var dataFile = fs.readFileSync(path.join(__dirname, "./wlan/static/views/data/acknowledgments.txt"), 'utf8');
+//
+//     let faqArray = dataFile.split("---\n")
+//
+//     // convert to individual data
+//     let faqJsonData = faqArray.map(p=>{
+//         let entity = p.split("\n")
+//
+//         if (entity[0]!="name:"){ // to skip empty data
+//             let data = {
+//                 "name": entity[0].replace("name: ", ""),
+//                 "photo": entity[1].replace("photo: ", ""),
+//                 "website": entity[2].replace("website: ", ""),
+//                 "content": entity[3].replace("content: ", "")
+//             }
+//             return data
+//         } else {
+//             return null
+//         }
+//
+//     })
+//     console.log(faqJsonData);
+//     response.render("acknowledgments.ejs", {
+//         "text": JSON.stringify(faqJsonData)
+//     })
+// })
 
 app.get("/FAQs", (request, response) => {
     var dataFile = fs.readFileSync(path.join(__dirname, "./wlan/static/views/data/FAQs.txt"), 'utf8');

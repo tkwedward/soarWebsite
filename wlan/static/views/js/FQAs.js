@@ -15,7 +15,8 @@ data.forEach((p, i)=>{
       // question and answer
       let question = document.createElement("h1")
       question.classList.add("question", `question${number}`)
-      question.innerText = `${number}. ${p.question}`
+      question.innerText = `${p.question}`
+      // question.innerText = `${number}. ${p.question}`
 
       let answer = document.createElement("div")
       answer.classList.add("answer", `answer${number}`)
